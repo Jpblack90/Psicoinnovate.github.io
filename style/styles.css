@@ -23,9 +23,10 @@ body p {
 }
 
 /* Estilo para el encabezado */
-h1 {
+/* Estilo para el encabezado */
+.header {
     background: #000000;
-    color: #fff;
+    color: #ffffff;
     padding: 15px;
     margin: 0;
     border-bottom: 4px solid #000000;
@@ -34,29 +35,33 @@ h1 {
     justify-content: space-between; /* Espacio entre los elementos */
 }
 
-h1 img {
+.header a img {
     width: 80px; /* Tamaño del logo */
+    display: block; /* Elimina el espacio blanco debajo de la imagen */
 }
 
-h1 .title {
+.header .title {
     flex-grow: 1; /* Permite al texto crecer para ocupar el espacio */
     text-align: center; /* Centra el texto */
     margin: 0; /* Sin margen */
+    color: #ffffff; /* Asegura que el texto sea blanco */
+    font-size: 24px; /* Tamaño de fuente adecuado */
+    font-weight: bold; /* Negrita para el título */
 }
 
-h1 button {
+.header button {
     width: auto;
     background-color: #ffffff;
     border: none;
     color: #000000;
-    padding: 10px ;
+    padding: 10px;
     cursor: pointer;
     font-size: 16px;
     border-radius: 10px;
-    margin-left: auto; /* Alinea el botón a la derecha */
+    margin-left: 20px; /* Espacio entre el título y el botón */
 }
 
-h1 button:hover {
+.header button:hover {
     background-color: #f0f0f0;
 }
 /* Estilos para el formulario */
