@@ -76,6 +76,7 @@ function determinarPersonalidad(N, E) {
     return resultado;
 }
 
+
 // Función para manejar el evento de clic del botón
 function calcularPersonalidad(event) {
     // Evita que el formulario se envíe y recargue la página
@@ -138,3 +139,4 @@ function calcularPersonalidad(event) {
     });
     formulario.appendChild(botonReiniciar);
 }
+
