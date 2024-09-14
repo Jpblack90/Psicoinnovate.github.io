@@ -1,0 +1,130 @@
+/* styles.css */
+/* Estilos básicos para el cuerpo del documento */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Estilos para los párrafos dentro del cuerpo */
+body p {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #444;
+    line-height: 1.8;
+}
+
+/* Estilo para el encabezado */
+h1 {
+    background: #000000;
+    color: #fff;
+    padding: 15px;
+    margin: 0;
+    border-bottom: 4px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacio entre los elementos */
+}
+
+h1 img {
+    width: 80px; /* Tamaño del logo */
+}
+
+h1 .title {
+    flex-grow: 1; /* Permite al texto crecer para ocupar el espacio */
+    text-align: center; /* Centra el texto */
+    margin: 0; /* Sin margen */
+}
+
+h1 button {
+    width: auto;
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+    padding: 10px ;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-left: auto; /* Alinea el botón a la derecha */
+}
+
+h1 button:hover {
+    background-color: #f0f0f0;
+}
+/* Estilos para el formulario */
+form {
+    background: #fff;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Estilos para las preguntas */
+.question {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para las etiquetas de las preguntas */
+.question label {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Estilos para las opciones de respuesta */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Estilos para los botones */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: #fff;
+    background: #000000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Cambiar el color del botón al pasar el ratón */
+button:hover {
+    background: #0004ff;
+    transform: scale(1.02);
+}
+
+/* Estilos para el resultado */
+#resultado {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #444;
+    text-align: center;
+}
+
+/* Ocultar el formulario y preguntas */
+.hidden {
+    display: none;
+}

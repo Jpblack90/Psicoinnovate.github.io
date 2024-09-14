@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Personalidad</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    
+    <h1 class="logo">
+        <img src="image/logo.png" alt="Logo">
+        <span class="title">Test de Personalidad</span>
+        <button onclick="location.href='index.html'">Cerrar sesión</button>
+    </h1>
+
+<body>
+    <p>A continuación, encontrará algunas preguntas sobre el modo como usted se comporta, siente y actúa. Después de cada pregunta, conteste con un "Sí" o "No", según sea su caso, marcando el círculo debajo de la columna respectiva del cuestionario.</p>
+    <p>Trabaje rápidamente y no emplee mucho tiempo en cada pregunta. Queremos su primera reacción; el cuestionario total no debe tomar más que unos pocos minutos. Asegúrese de contestar todas las preguntas. No hay respuestas correctas ni incorrectas; esto no es un test de inteligencia o habilidad, simplemente una medida de la forma como usted se comporta.</p>
+    
+</body>
+
+<form id="personalidadForm" onsubmit="calcularPersonalidad(event); return false;">
+    <div id="preguntas"></div>
+    <div class="question">
+        <label>1. ¿Le gusta abundancia de excitación y bullicio a su alrededor?</label><br>
+        <input type="radio" name="q1" value="yes"> Sí<br>
+        <input type="radio" name="q1" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>2. ¿Tiene a menudo un sentimiento de intranquilidad, como si quisiera algo, pero sin saber qué?</label><br>
+        <input type="radio" name="q2" value="yes"> Sí<br>
+        <input type="radio" name="q2" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>3. ¿Tiene casi siempre una contestación lista a la mano cuando se le habla?</label><br>
+        <input type="radio" name="q3" value="yes"> Sí<br>
+        <input type="radio" name="q3" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>4. ¿Se siente algunas veces feliz, algunas veces triste, sin una razón real?</label><br>
+        <input type="radio" name="q4" value="yes"> Sí<br>
+        <input type="radio" name="q4" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>5. ¿Permanece usualmente retraído(a) en fiestas y reuniones?</label><br>
+        <input type="radio" name="q5" value="yes"> Sí<br>
+        <input type="radio" name="q5" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>6. Cuando era niño(a) ¿hacia siempre inmediatamente lo que le decían, sin refunfuñar?</label><br>
+        <input type="radio" name="q6" value="yes"> Sí<br>
+        <input type="radio" name="q6" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>7. ¿Se enfada o molesta a menudo?</label><br>
+        <input type="radio" name="q7" value="yes"> Sí<br>
+        <input type="radio" name="q7" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>8. Cuando lo(a) meten a una pelea ¿prefiere sacar los trapitos al aire de una vez por todas, en vez de quedar callado(a) esperando que las cosas se calmen solas?</label><br>
+        <input type="radio" name="q8" value="yes"> Sí<br>
+        <input type="radio" name="q8" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>9. ¿Es usted triste, melancólico(a)?</label><br>
+        <input type="radio" name="q9" value="yes"> Sí<br>
+        <input type="radio" name="q9" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>10. ¿Le gusta mezclarse con la gente?</label><br>
+        <input type="radio" name="q10" value="yes"> Sí<br>
+        <input type="radio" name="q10" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>11. ¿Ha perdido a menudo el sueño por sus preocupaciones?</label><br>
+        <input type="radio" name="q11" value="yes"> Sí<br>
+        <input type="radio" name="q11" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>12. ¿Se pone a veces malhumorado(a)?</label><br>
+        <input type="radio" name="q12" value="yes"> Sí<br>
+        <input type="radio" name="q12" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>13. ¿Se catalogaría a sí mismo(a) como despreocupado(a) o confiado(a) a su buena suerte?</label><br>
+        <input type="radio" name="q13" value="yes"> Sí<br>
+        <input type="radio" name="q13" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>14. ¿Se decide a menudo demasiado tarde?</label><br>
+        <input type="radio" name="q14" value="yes"> Sí<br>
+        <input type="radio" name="q14" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>15. ¿Le gusta trabajar solo(a)?</label><br>
+        <input type="radio" name="q15" value="yes"> Sí<br>
+        <input type="radio" name="q15" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>16. ¿Se ha sentido a menudo apático(a) y cansado(a) sin razón?</label><br>
+        <input type="radio" name="q16" value="yes"> Sí<br>
+        <input type="radio" name="q16" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>17. ¿Es por lo contrario animado(a) y jovial?</label><br>
+        <input type="radio" name="q17" value="yes"> Sí<br>
+        <input type="radio" name="q17" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>18. ¿Se ríe a menudo de chistes groseros?</label><br>
+        <input type="radio" name="q18" value="yes"> Sí<br>
+        <input type="radio" name="q18" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>19. ¿Se siente a menudo hastiado(a), harto, fastidiado?</label><br>
+        <input type="radio" name="q19" value="yes"> Sí<br>
+        <input type="radio" name="q19" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>20. ¿Se siente incómodo(a) con vestidos que no son del diario?</label><br>
+        <input type="radio" name="q20" value="yes"> Sí<br>
+        <input type="radio" name="q20" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>21. ¿Se distrae (vaga su mente) a menudo cuando trata de prestar atención a algo?</label><br>
+        <input type="radio" name="q21" value="yes"> Sí<br>
+        <input type="radio" name="q21" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>22. ¿Puede expresar en palabras fácilmente lo que piensa?</label><br>
+        <input type="radio" name="q22" value="yes"> Sí<br>
+        <input type="radio" name="q22" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>23. ¿Se abstrae (se pierde en sus pensamientos) a menudo?</label><br>
+        <input type="radio" name="q23" value="yes"> Sí<br>
+        <input type="radio" name="q23" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>24. ¿Está completamente libre de prejuicios de cualquier tipo?</label><br>
+        <input type="radio" name="q24" value="yes"> Sí<br>
+        <input type="radio" name="q24" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>25. ¿Le gustan las bromas?</label><br>
+        <input type="radio" name="q25" value="yes"> Sí<br>
+        <input type="radio" name="q25" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>26. ¿Piensa a menudo en su pasado?</label><br>
+        <input type="radio" name="q26" value="yes"> Sí<br>
+        <input type="radio" name="q26" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>27. ¿Le gusta mucho la buena comida?</label><br>
+        <input type="radio" name="q27" value="yes"> Sí<br>
+        <input type="radio" name="q27" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>28. Cuando se fastidia ¿necesita algún(a) amigo(a) para hablar sobre ello?</label><br>
+        <input type="radio" name="q28" value="yes"> Sí<br>
+        <input type="radio" name="q28" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>29. ¿Le molesta vender cosas o pedir dinero a la gente para alguna buena causa?</label><br>
+        <input type="radio" name="q29" value="yes"> Sí<br>
+        <input type="radio" name="q29" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>30. ¿Alardea (se jacta) un poco a veces?</label><br>
+        <input type="radio" name="q30" value="yes"> Sí<br>
+        <input type="radio" name="q30" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>31. ¿Es usted muy susceptible (sensible) por algunas cosas?</label><br>
+        <input type="radio" name="q31" value="yes"> Sí<br>
+        <input type="radio" name="q31" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>32. ¿Le gusta más quedarse en casa, que ir a una fiesta aburrida?</label><br>
+        <input type="radio" name="q32" value="yes"> Sí<br>
+        <input type="radio" name="q32" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>33. ¿Se pone a menudo tan inquieto(a) que no puede permanecer sentado(a) durante mucho rato en una silla?</label><br>
+        <input type="radio" name="q33" value="yes"> Sí<br>
+        <input type="radio" name="q33" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>34. ¿Le gusta planear las cosas, con mucha anticipación?</label><br>
+        <input type="radio" name="q34" value="yes"> Sí<br>
+        <input type="radio" name="q34" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>35. ¿Tiene a menudo mareos (vértigos)?</label><br>
+        <input type="radio" name="q35" value="yes"> Sí<br>
+        <input type="radio" name="q35" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>36. ¿Contesta siempre una carta personal, tan pronto como puede, después de haberla leído?</label><br>
+        <input type="radio" name="q36" value="yes"> Sí<br>
+        <input type="radio" name="q36" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>37. ¿Hace usted usualmente las cosas mejor resolviéndolas solo(a) que hablando a otra persona sobre ello?</label><br>
+        <input type="radio" name="q37" value="yes"> Sí<br>
+        <input type="radio" name="q37" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>38. ¿Le falta frecuentemente aire, sin haber hecho un trabajo pesado?</label><br>
+        <input type="radio" name="q38" value="yes"> Sí<br>
+        <input type="radio" name="q38" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>39. ¿Es usted generalmente una persona tolerante, que no se molesta si las cosas no están perfectas?</label><br>
+        <input type="radio" name="q39" value="yes"> Sí<br>
+        <input type="radio" name="q39" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>40. ¿Sufre de los nervios?</label><br>
+        <input type="radio" name="q40" value="yes"> Sí<br>
+        <input type="radio" name="q40" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>41. ¿Le gustaría más planear cosas, que hacer cosas?</label><br>
+        <input type="radio" name="q41" value="yes"> Sí<br>
+        <input type="radio" name="q41" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>42. ¿Deja algunas veces para mañana lo que debería hacer hoy día?</label><br>
+        <input type="radio" name="q42" value="yes"> Sí<br>
+        <input type="radio" name="q42" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>43. ¿Se pone nervioso(a) en lugares tales como ascensores, trenes o túneles?</label><br>
+        <input type="radio" name="q43" value="yes"> Sí<br>
+        <input type="radio" name="q43" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>44. Cuando hace nuevos amigos(as) ¿es usted usualmente quien inicia la relación o invita a que se produzca?</label><br>
+        <input type="radio" name="q44" value="yes"> Sí<br>
+        <input type="radio" name="q44" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>45. ¿Sufre fuertes dolores de cabeza?</label><br>
+        <input type="radio" name="q45" value="yes"> Sí<br>
+        <input type="radio" name="q45" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>46. ¿Siente generalmente que las cosas se arreglarán por sí solas y que terminarán bien de algún modo?</label><br>
+        <input type="radio" name="q46" value="yes"> Sí<br>
+        <input type="radio" name="q46" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>47. ¿Le cuesta trabajo coger el sueño al acostarse en las noches?</label><br>
+        <input type="radio" name="q47" value="yes"> Sí<br>
+        <input type="radio" name="q47" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>48. ¿Ha dicho alguna vez mentiras en su vida?</label><br>
+        <input type="radio" name="q48" value="yes"> Sí<br>
+        <input type="radio" name="q48" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>49. ¿Dice algunas veces lo primero que se le viene a la cabeza?</label><br>
+        <input type="radio" name="q49" value="yes"> Sí<br>
+        <input type="radio" name="q49" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>50. ¿Se preocupa durante un tiempo demasiado largo, después de una experiencia embarazosa?</label><br>
+        <input type="radio" name="q50" value="yes"> Sí<br>
+        <input type="radio" name="q50" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>51. ¿Se mantiene usualmente hérnico(a) o encerrado(a) en sí mismo(a), excepto con amigos muy íntimos?</label><br>
+        <input type="radio" name="q51" value="yes"> Sí<br>
+        <input type="radio" name="q51" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>52. ¿Se crea a menudo problemas, por hacer cosas sin pensar?</label><br>
+        <input type="radio" name="q52" value="yes"> Sí<br>
+        <input type="radio" name="q52" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>53. ¿Le gusta contar chistes y referir historias graciosas a sus amigos?</label><br>
+        <input type="radio" name="q53" value="yes"> Sí<br>
+        <input type="radio" name="q53" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>54. ¿Se le hace más fácil ganar que perder un juego?</label><br>
+        <input type="radio" name="q54" value="yes"> Sí<br>
+        <input type="radio" name="q54" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>55. ¿Se siente a menudo demasiado consciente de sí mismo(a) o poco natural cuando está con sus superiores?</label><br>
+        <input type="radio" name="q55" value="yes"> Sí<br>
+        <input type="radio" name="q55" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>56. Cuando todas las posibilidades están contra usted, ¿piensa aún usualmente que vale la pena intentar?</label><br>
+        <input type="radio" name="q56" value="yes"> Sí<br>
+        <input type="radio" name="q56" value="no"> No<br>
+    </div>
+    
+    <div class="question">
+        <label>57. ¿Siente “sensaciones” en el abdomen, antes de un hecho importante?</label><br>
+        <input type="radio" name="q57" value="yes"> Sí<br>
+        <input type="radio" name="q57" value="no"> No<br>
+    </div>
+
+    <button type="submit">Calcular Personalidad</button>
+</form>
+
+<div id="resultado"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
